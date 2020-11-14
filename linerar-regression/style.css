@@ -1,0 +1,335 @@
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 1. Initial variables
+
+// Colors
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 71%,  48%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 100%, 61%) !default
+
+// Typography
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+$family-monospace: monospace !default
+$render-mode: optimizeLegibility !default
+
+$size-1: 3rem !default
+$size-2: 2.5rem !default
+$size-3: 2rem !default
+$size-4: 1.5rem !default
+$size-5: 1.25rem !default
+$size-6: 1rem !default
+$size-7: 0.75rem !default
+
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-semibold: 500 !default
+$weight-bold: 700 !default
+
+// Body
+$body-background: #fff !default
+$body-size: 16px !default
+
+// Responsiveness
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+// 960px container + 40px
+$desktop: 1000px !default
+// 1152px container + 40
+$widescreen: 1192px !default
+// 1344px container + 40
+$fullhd: 1384px !default
+
+// Miscellaneous
+$easing: ease-out !default
+$radius-small: 2px !default
+$radius: 3px !default
+$radius-large: 5px !default
+$speed: 86ms !default
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 2. Primary colors
+
+$primary: $turquoise !default
+
+$info: $blue !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 3. Applied variables
+
+// Invert colors
+$orange-invert: findColorInvert($orange) !default
+$yellow-invert: findColorInvert($yellow) !default
+$green-invert: findColorInvert($green) !default
+$turquoise-invert: findColorInvert($turquoise) !default
+$blue-invert: findColorInvert($blue) !default
+$purple-invert: findColorInvert($purple) !default
+$red-invert: findColorInvert($red) !default
+
+$primary-invert: $turquoise-invert !default
+$info-invert: $blue-invert !default
+$success-invert: $green-invert !default
+$warning-invert: $yellow-invert !default
+$danger-invert: $red-invert !default
+$light-invert: $dark !default
+$dark-invert: $light !default
+
+// General colors
+$background: $white-ter !default
+
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+// Text colors
+$text: $grey-dark !default
+$text-invert: findColorInvert($text) !default
+$text-light: $grey !default
+$text-strong: $grey-darker !default
+
+// Code colors
+$code: $red !default
+$code-background: $background !default
+
+$pre: $text !default
+$pre-background: $background !default
+
+// Link colors
+$link: $primary !default
+$link-invert: $primary-invert !default
+$link-visited: $purple !default
+
+$link-hover: $grey-darker !default
+$link-hover-border: $grey-light !default
+
+$link-focus: $grey-darker !default
+$link-focus-border: $primary !default
+
+$link-active: $grey-darker !default
+$link-active-border: $grey-dark !default
+
+// Typography
+$family-primary: $family-sans-serif !default
+$family-code: $family-monospace !default
+
+$size-small: $size-7 !default
+$size-normal: $size-6 !default
+$size-medium: $size-5 !default
+$size-large: $size-4 !default
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+// 4. Lists and maps
+
+$colors: ("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)) !default
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 !default
+
+
+
+
+
+$slider-radius: $radius !default
+$slider-track-background: $grey-light !default
+$slider-track-radius: $radius !default
+$slider-track-border: 0px solid $grey !default
+$slider-track-shadow: 0px 0px 0px $grey !default
+$slider-thumb-background: $primary !default
+$slider-thumb-radius: $radius !default
+$slider-thumb-border: 0px 0px 0px $grey !default
+$slider-thumb-shadow: none !default
+
+=slider-size($size)
+  $track-height: $size / 2
+  $thumb-size: $size
+
+  &:not([orient="vertical"])
+    &::-webkit-slider-runnable-track
+      height: $track-height
+    &::-moz-range-track
+      height: $track-height
+    &::-ms-track
+      height: $track-height
+  
+  &[orient="vertical"]
+    &::-webkit-slider-runnable-track
+      width: $track-height
+    &::-moz-range-track
+      width: $track-height
+    &::-ms-track
+      width: $track-height
+  
+  &::-webkit-slider-thumb
+    height: $thumb-size
+    width: $thumb-size
+    margin-top: -( $thumb-size / 2 )
+  &::-moz-range-thumb
+    height: $thumb-size
+    width: $thumb-size
+  &::-ms-thumb
+    height: $thumb-size
+    width: $thumb-size
+  
+input[type=range]
+  &.slider
+    -webkit-appearance: none
+    appearance: none
+    margin: 1rem 0
+    background: transparent
+
+    &.is-fullwidth
+      display: block
+      width: 100%
+
+    &:focus
+      outline: none
+    
+    &:not([orient="vertical"])
+      &::-webkit-slider-runnable-track
+        width: 100%
+      &::-moz-range-track
+        width: 100%
+      &::-ms-track
+        width: 100%
+    &[orient="vertical"]
+      -webkit-appearance: slider-vertical
+      writing-mode: bt-lr
+      &::-webkit-slider-runnable-track
+        height: 100%
+      &::-moz-range-track
+        height: 100%
+      &::-ms-track
+        height: 100%
+
+    &::-webkit-slider-runnable-track
+      cursor: pointer
+      animate: 0.2s
+      box-shadow: $slider-track-shadow
+      background: $slider-track-background
+      border-radius: $slider-track-radius
+      border: $slider-track-border
+    &::-moz-range-track
+      cursor: pointer
+      animate: 0.2s
+      box-shadow: $slider-track-shadow
+      background: $slider-track-background
+      border-radius: $slider-track-radius
+      border: $slider-track-border
+    &::-ms-track
+      cursor: pointer
+      animate: 0.2s
+      box-shadow: $slider-track-shadow
+      background: $slider-track-background
+      border-radius: $slider-track-radius
+      border: $slider-track-border
+    &::-ms-fill-lower
+      background: $primary
+    &::-ms-fill-upper
+      background: $grey-lighter
+
+    &::-webkit-slider-thumb
+      box-shadow: $slider-thumb-shadow
+      border: $slider-thumb-border
+      border-radius: $slider-thumb-radius
+      background: $slider-thumb-background
+      cursor: pointer
+      -webkit-appearance: none
+      transition: transform .2s ease, -webkit-transform .2s ease
+      transition: transform .2s ease
+      transition: -webkit-transform .2s ease
+    &::-moz-range-thumb
+      box-shadow: $slider-thumb-shadow
+      border: $slider-thumb-border
+      background: $slider-thumb-background
+      border-radius: $slider-thumb-radius
+      cursor: pointer
+      transition: transform .2s ease, -webkit-transform .2s ease
+      transition: transform .2s ease
+      transition: -webkit-transform .2s ease
+    &::-ms-thumb
+      box-shadow: $slider-thumb-shadow
+      border: $slider-thumb-border
+      background: darken( $slider-thumb-background, 10% )
+      border-radius: $slider-thumb-radius
+      cursor: pointer
+      transition: transform .2s ease, -webkit-transform .2s ease
+      transition: transform .2s ease
+      transition: -webkit-transform .2s ease
+
+    &::-webkit-slider-thumb
+      -webkit-appearance: none
+
+    &.is-circle
+      &::-webkit-slider-thumb
+        border-radius: 50%
+      &::-moz-range-thumb
+        border-radius: 50%
+      &::-ms-thumb
+        border-radius: 50%
+
+    &:active
+      &::-webkit-slider-thumb
+        -webkit-transform: scale(1.25)
+        transform: scale(1.25)
+      &::-moz-range-thumb
+        transform: scale(1.25)
+      &::-ms-thumb
+        -ms-transform: scale(1.25)
+        transform: scale(1.25)
+
+    &:disabled
+      opacity: 0.5
+      &::-webkit-slider-thumb
+        -webkit-transform: scale(1)
+        transform: scale(1)
+      &::-moz-range-thumb
+        transform: scale(1)
+      &::-ms-thumb
+        -ms-transform: scale(1)
+        transform: scale(1)
+
+
+    +slider-size($size-normal)
+    &.is-small
+      +slider-size($size-small)
+    &.is-medium
+      +slider-size($size-medium)
+    &.is-large
+      +slider-size($size-large)
+
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      &.is-#{$name}
+        &::-moz-range-track
+          background: $color
+        &::-webkit-slider-runnable-track
+          background: $color
+        &::-ms-track
+          background: $color !important
+        &::-ms-fill-lower
+          background: $color
