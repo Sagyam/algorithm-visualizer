@@ -13,7 +13,11 @@ Link : https://sagyamthapa.me/algorithm-visualizer/polynomial-regression/
 
 ## Demo
 
-https://user-images.githubusercontent.com/45777019/135131094-a28dd178-73b8-4f47-94d4-6553c26729df.mp4
+
+
+https://user-images.githubusercontent.com/45777019/135131411-e16fee3e-3ffd-4dbf-b45d-9e97061b2063.mp4
+
+
 
   
 ## Acknowledgements
