@@ -1,6 +1,10 @@
 
 # Algorithm Visualizer
 
+https://user-images.githubusercontent.com/45777019/135131094-a28dd178-73b8-4f47-94d4-6553c26729df.mp4
+
+
+
 An interactive web app to visualise linear and polynomial regression using neural nwtwork.
 
 Link : https://sagyamthapa.me/algorithm-visualizer/polynomial-regression/
