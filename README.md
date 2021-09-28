@@ -1,2 +1,2 @@
-# algorithm-visualizer
+# Algorithm Visualizer
 Polynomial regression Visualizer
