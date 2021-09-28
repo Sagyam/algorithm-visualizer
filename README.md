@@ -2,6 +2,7 @@
 # Algorithm Visualizer
 
 An interactive web app to visualise linear and polynomial regression using neural nwtwork.
+
 Link : https://sagyamthapa.me/algorithm-visualizer/polynomial-regression/
 
 [![GitHub license](https://img.shields.io/github/license/Sagyam/algorithm-visualizer?style=for-the-badge)](https://github.com/Sagyam/algorithm-visualizer/blob/master/LICENSE)
