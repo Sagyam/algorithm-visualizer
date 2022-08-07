@@ -20,13 +20,7 @@ Link : https://sagyamthapa.me/algorithm-visualizer/polynomial-regression/
   
 ## Acknowledgements
 
- - [ Linear Regression with TensorFlow.js](https://www.youtube.com/watch?v=dLp10CFIvxI&t=47s)
+- [ Linear Regression with TensorFlow.js](https://www.youtube.com/watch?v=dLp10CFIvxI&t=47s)
 -  [ Polynomial Regression with TensorFlow.js](https://www.youtube.com/watch?v=tIXDik5SGsI)
-
-## Roadmap
-
-- Make it mobile friendly
-
-- Add graph algorithms
 
   
