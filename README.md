@@ -1,6 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/Sagyam/algorithm-visualizer?style=for-the-badge)](https://github.com/Sagyam/algorithm-visualizer/blob/master/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Sagyam/algorithm-visualizer?style=for-the-badge)
-![Lines of code](https://img.shields.io/tokei/lines/github/sagyam/algorithm-visualizer?style=for-the-badge)
 ![Website](https://img.shields.io/website?down_message=Down&style=for-the-badge&up_message=Up&url=https://sagyam.github.io/algorithm-visualizer/polynomial-regression/)
 
 # Algorithm Visualizer
